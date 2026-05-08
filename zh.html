@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
     <title>谭鹏萍</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-        .lang-switch {
-            float: right;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,27 +12,140 @@
     <a href="index.html">English</a>
 </div>
 
-<h1>谭鹏萍</h1>
-<p>中山大学计算机学院 硕士研究生（人机交互方向）</p>
+<header>
+    <h1>谭鹏萍</h1>
+    <p class="subtitle">
+        中山大学计算机学院硕士研究生
+    </p>
+    <p>
+        我关注 AI 系统如何基于真实的同伴经验与社交媒体内容，
+        支持人的职业探索、意义建构与自我反思。
+    </p>
+</header>
 
-<h2>研究方向</h2>
-<p>
-我关注人机交互（HCI）以及AI系统如何支持职业探索与意义建构，特别是基于社交媒体内容的智能交互系统。
-</p>
+<nav>
+    <a href="#research">研究方向</a>
+    <a href="#projects">项目</a>
+    <a href="#publications">论文</a>
+    <a href="#activities">活动与荣誉</a>
+    <a href="#contact">联系方式</a>
+</nav>
 
-<h2>项目：JobMate</h2>
-<p>
-一个将真实社交媒体职业分享内容转化为可对话AI角色的系统，帮助用户从被动浏览转向主动探索职业路径。
-</p>
+<section id="research">
+    <h2>研究方向</h2>
+    <ul>
+        <li>人机交互</li>
+        <li>AI 介导的意义建构与反思</li>
+        <li>社交媒体与职业探索</li>
+        <li>基于真实人类经验的 AI 交互系统</li>
+    </ul>
+</section>
 
-<h2>论文</h2>
-<p>
-《Same Stories, Different Journeys》<br>
-正在撰写 / 投稿中
-</p>
+<section id="projects">
+    <h2>代表项目</h2>
 
-<h2>联系方式</h2>
-<p>Email: your@email.com</p>
+    <div class="project">
+        <h3>JobMate：基于同伴经验的 AI 职业探索系统</h3>
+        <p class="meta">2025.10 – 2026.04</p>
+        <p>
+            JobMate 是一个将小红书上的真实求职经验分享内容转化为可对话 AI 角色的交互系统，
+            旨在帮助年轻求职者从被动浏览转向主动的职业探索与意义建构。
+        </p>
+        <p>
+            <strong>角色：</strong>项目负责人；系统设计；数据收集与处理；提示词设计；
+            用户研究；定性分析；论文写作。
+        </p>
+        <p>
+            <strong>方法：</strong>LLM 数据处理、角色卡构建、自我决定论、原型设计、用户研究。
+        </p>
+        <p>
+            <strong>状态：</strong>论文、代码、视频与网页原型目前未公开。
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>融合情绪与 Emoji 表征的股价预测研究</h3>
+        <p class="meta">2025.07 – 2025.09</p>
+        <p>
+            该项目基于 StockEmotions 数据集，探究 emoji 情绪编码是否能够提升股价预测效果。
+        </p>
+        <p>
+            <strong>角色：</strong>文献调研；结果分析；论文撰写。
+        </p>
+        <p>
+            <strong>方法：</strong>LSTM、情绪表征、emoji 编码。
+        </p>
+        <p>
+            <strong>结果：</strong>相关论文已发表，代码未公开。
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>基于 LLM 与 ReAct 的 Text-to-Cypher</h3>
+        <p class="meta">2025.03 – 2025.06</p>
+        <p>
+            该项目探索如何将自然语言问题转化为图数据库查询语言 Cypher。
+        </p>
+        <p>
+            <strong>角色：</strong>文献调研；现有工作梳理；基于 LLM 与 ReAct 框架进行实验测试。
+        </p>
+        <p>
+            <strong>方法：</strong>大语言模型、ReAct 框架、语义解析。
+        </p>
+        <p>
+            <strong>发现：</strong>初步效果有限，准确率约为 20%。
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>权力概念的隐喻表征心理学实验复现</h3>
+        <p class="meta">2022.12 – 2023.02</p>
+        <p>
+            该心理学实验探究权力概念与字体大小、颜色之间的隐喻联系。
+        </p>
+        <p>
+            <strong>角色：</strong>实验程序设计；参与部分实验；完成全部数据分析；撰写部分报告。
+        </p>
+        <p>
+            <strong>方法：</strong>Stroop 范式、反应时分析。
+        </p>
+        <p>
+            <strong>结果：</strong>当高权力概念以大号或金色字体呈现、低权力概念以小号或灰色字体呈现时，
+            被试反应时更短。
+        </p>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>论文与手稿</h2>
+    <ul>
+        <li>股价预测相关论文，已发表，2025。</li>
+        <li>
+            <em>Same Stories, Different Journeys: From Social Comparison to Sensemaking
+            in AI-Mediated Peer Career Exploration.</em> 手稿准备中。
+        </li>
+    </ul>
+</section>
+
+<section id="activities">
+    <h2>活动与荣誉</h2>
+    <ul>
+        <li>古诗诗社社长</li>
+        <li>跨年诗会组织者</li>
+        <li>Savvy Club 口才俱乐部，萨维之星</li>
+        <li>中山大学奖学金，2021–2025</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>联系方式</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: BanchiLin</p>
+</section>
+
+<footer>
+    <p>© 2026 谭鹏萍</p>
+</footer>
 
 </body>
 </html>
